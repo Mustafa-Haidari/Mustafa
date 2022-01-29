@@ -42,14 +42,20 @@ h3 {
     padding: .5rem 1rem;
     min-height: 80px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     border-radius: 0 0 7rem 1rem;
 }
 
-.nav .main-name {
+.nav .nav-name {
     font-size: 4rem;
     font-weight: bold;
+}
+
+.nav .nav-contact {
+    margin-right: 2rem;
 }
 
 .header {
