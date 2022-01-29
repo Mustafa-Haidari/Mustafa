@@ -1,0 +1,223 @@
+:root {}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+}
+
+h1 {
+    font-size: 1.4rem;
+    margin: 0;
+    padding: .5rem 0;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: .5rem 0;
+}
+
+h3 {
+    font-size: 1rem;
+    margin: 0;
+    padding: .5rem 0;
+}
+
+.container {
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: 0 auto;
+    /* background-color: #eee; */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-columns: 350px;
+    grid-auto-flow: dense;
+    grid-gap: 20px;
+}
+
+.header>div {
+    /* flex: 1; */
+    padding: 1rem 0;
+}
+
+.img {
+    position: relative;
+}
+
+span.white-light {
+    background-color: white;
+    border-radius: 2px 2px 4px 2px;
+    position: absolute;
+    transform: rotate(15deg);
+    width: 11px;
+}
+
+span.white-light.blue {
+    top: 173px;
+    left: 237px;
+    height: 38px;
+}
+
+span.white-light.red {
+    top: 174px;
+    left: 176px;
+    height: 35px;
+}
+
+.img img {
+    max-width: 100%;
+    background: linear-gradient(270deg, #131fc0, #376b9c, #a33e79, #b90b0b);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    border-radius: 1rem;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.projects{
+    background-color: #eee;
+    padding: .2rem .5rem;
+}
+
+
+/*  portfolio */
+
+.portfolio {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-columns: 200px;
+    grid-auto-flow: dense;
+    grid-gap: 1rem;
+}
+
+.item {
+    position: relative;
+    background-color: #eee;
+    overflow: hidden;
+    border-radius: .5rem;
+    border: #ccc 1px solid;
+}
+
+/* .item:nth-child(7n+ 1){
+    grid-column: span 2;
+    grid-row: span 2;
+} */
+
+.info {
+    margin: .5rem 0;
+}
+
+.item img {
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.item:hover img {
+    transform: scale(1.03);
+}
+
+.details {
+    padding: .5rem 1rem;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: .5rem;
+    padding: .5rem 0;
+}
+
+.btns button {
+    flex: 1;
+    padding: .5rem;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+
+/* techs */
+
+span.tech {
+    display: inline-block;
+    font-size: .8rem;
+    border-radius: 5px;
+    background-color: lightcoral;
+    padding: 4px 5px;
+    font-weight: bold;
+    color: white;
+}
+
+span.normal {
+    font-weight: normal;
+}
+
+span.html {
+    background-color: #dd4b25;
+}
+
+span.css {
+    background-color: #254bdd;
+}
+
+span.js {
+    background-color: #f7df1e;
+    color: black;
+}
+
+span.react {
+    background-color: black;
+    color: #61dafb;
+}
+
+span.csharp {
+    background-color: green;
+    color: white;
+}
+
+span.web3 {
+    background-color: darkblue;
+    color: white;
+}
+
+span.java {}
+
+span.unity {}
+
+span.dotnet {}
+
+/* responsive */
+
+@media (max-width: 768px) {
+    .portfolio {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-auto-columns: 250px;
+    }
+
+    .item:nth-child(7n+ 1) {
+        grid-column: unset;
+        grid-row: unset;
+    }
+}
