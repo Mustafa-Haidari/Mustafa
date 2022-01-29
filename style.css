@@ -33,7 +33,23 @@ h3 {
     /* background-color: #eee; */
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.nav{
+    background-color: rgb(4, 13, 43);
+    color: white;
+    padding: .5rem 1rem;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 7rem 1rem;
+}
+
+.nav .main-name {
+    font-size: 4rem;
+    font-weight: bold;
 }
 
 .header {
@@ -49,28 +65,8 @@ h3 {
     padding: 1rem 0;
 }
 
-.img {
+.header .img {
     position: relative;
-}
-
-span.white-light {
-    background-color: white;
-    border-radius: 2px 2px 4px 2px;
-    position: absolute;
-    transform: rotate(15deg);
-    width: 11px;
-}
-
-span.white-light.blue {
-    top: 173px;
-    left: 237px;
-    height: 38px;
-}
-
-span.white-light.red {
-    top: 174px;
-    left: 176px;
-    height: 35px;
 }
 
 .img img {
