@@ -39,10 +39,13 @@ del.addEventListener('click', () => {
     searchData(inputData)
 })
 
-item.forEach(bg => bg.classList.add('hide'))
-setTimeout(getData, 1500)
+const skeleton = document.querySelectorAll('.skeleton')
+const actualContent = document.querySelectorAll('.actual-content')
 
-function getData(){
-    placeholderItem.forEach(bg => bg.classList.add('hide'))
-    item.forEach(bg => bg.classList.remove('hide'))
+actualContent.forEach(item => item.classList.add('hide'))
+setTimeout(loadData, 1500)
+
+function loadData(){
+    skeleton.forEach(item => item.classList.add('hide'))
+    actualContent.forEach(item => item.classList.remove('hide'))
 }
