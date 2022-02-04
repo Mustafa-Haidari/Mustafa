@@ -284,16 +284,15 @@ span.dotnet {}
 
 /* content placeholder */
 
-.animated-bg {
-    background-image: linear-gradient(to right,
-    #f6f7f8 0%, #edeef1 10%, #f6f7f8 20%,
-    #f6f7f8 100%);
-    background-size: 200% 100%;
-    animation: bgPos 1s linear infinite;;
-}
-
 .item-img{
+    width: 100%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+.item-img-placeholder{
     height: 240px;
+    width: 100%;
     margin-bottom: 1rem;
     object-fit: cover;
     transition: all 0.5s ease;
