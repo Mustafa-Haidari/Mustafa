@@ -286,7 +286,6 @@ span.dotnet {}
 
 .item-img{
     width: 100%;
-    margin-bottom: 1rem;
     object-fit: cover;
     transition: all 0.5s ease;
 }
